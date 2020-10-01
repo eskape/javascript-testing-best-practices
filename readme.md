@@ -38,31 +38,31 @@ Begin met het begrijpen van de testmethoden die de basis vormen voor elke applic
 
 <br/><br/>
 
-## `Table of Contents`
+## `Inhoudsopgave`
 
-#### [`Section 0: The Golden Rule`](#section-0️⃣-the-golden-rule)
+#### [`Sectie 0: De gouden regel`](#section-0️⃣-the-golden-rule)
 
-A single advice that inspires all the others (1 special bullet)
+Advies dat alle anderen inspireert (1 speciale punt)
 
-#### [`Section 1: The Test Anatomy`](#section-1-the-test-anatomy-1)
+#### [`Sectie 1: The Testanatomie`](#section-1-the-test-anatomy-1)
 
-The foundation - structuring clean tests (12 bullets)
+De basis - structeren van testen (12 punten)
 
-#### [`Section 2: Backend`](#section-2️⃣-backend-testing)
+#### [`Sectie 2: Backend`](#section-2️⃣-backend-testing)
 
-Writing backend and Microservices tests efficiently (8 bullets)
+Efficientl schrijven van backend and Microservices testen  (8 punten)
 
-#### [`Section 3: Frontend`](#section-3️⃣-frontend-testing)
+#### [`Sectie 3: Frontend`](#section-3️⃣-frontend-testing)
 
-Writing tests for web UI including component and E2E tests (11 bullets)
+Schrijven van web UI testen inclusief component en E2E tests (11 punten)
 
-#### [`Section 4: Measuring Tests Effectiveness`](#section-4️⃣-measuring-test-effectiveness)
+#### [`Sectie 4: Effectiviteit van Testen meten`](#section-4️⃣-measuring-test-effectiveness)
 
-Watching the watchman - measuring test quality (4 bullets)
+Kijken naar de watchman - meaten van test kwaliteit (4 punten)
 
-#### [`Section 5: Continuous Integration`](#section-5️⃣-ci-and-other-quality-measures)
+#### [`Sectie 5: Continuous Integration`](#section-5️⃣-ci-and-other-quality-measures)
 
-Guidelines for CI in the JS world (9 bullets)
+Richtlijnen voor CI in de JavaScript wereld (9 punten)
 
 <br/><br/>
 
