@@ -16,15 +16,17 @@ Geavanceerde onderwerpen zoals testen in productie, mutatietesten, op property-b
 
 ## 🌐 Full-stack: front, backend, CI, anything
 
-Start by understanding the ubiquitous testing practices that are the foundation for any application tier. Then, delve into your area of choice: frontend/UI, backend, CI or maybe all of them?
+Begin met het begrijpen van de testmethoden die de basis vormen voor elke applicatielaag zoals: frontend / UI, backend, CI of misschien allemaal?
 
 <br/>
 
-### Written By Yoni Goldberg
+### Geschreven door Yoni Goldberg
 
-- A JavaScript & Node.js consultant
-- 📗 [Testing Node.js & JavaScript From A To Z](https://www.testjavascript.com) - My comprehensive online course with more than [10 hours of video](https://www.testjavascript.com), 14 test types and more than 40 best practices
-- [Follow me on Twitter ](https://twitter.com/goldbergyoni/)
+- Een JavaScript & Node.js consultant
+- 📗 [Testing Node.js & JavaScript From A To Z](https://www.testjavascript.com) - 
+45/5000
+Mijn uitgebreide online cursus met meer dan [10 uur aan video](https://www.testjavascript.com), 14 test types en meer dan 40 best practices
+- [Volg mij op Twitter ](https://twitter.com/goldbergyoni/)
 
 <br/>
 
