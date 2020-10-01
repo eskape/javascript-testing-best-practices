@@ -10,9 +10,9 @@
 
 Dit is een gids voor de betrouwbaarheid van JavaScript & Node.js van A-Z. Het vat tientallen van de beste blogposts, boeken en tools die de markt te bieden heeft voor u samen.
 
-## 🚢 Advanced: Goes 10,000 miles beyond the basics
+## 🚢 Geavanceerd: gaat verder dan de basis
 
-Hop into a journey that travels way beyond the basics into advanced topics like testing in production, mutation testing, property-based testing and many other strategic & professional tools. Should you read every word in this guide your testing skills are likely to go way above the average
+Geavanceerde onderwerpen zoals testen in productie, mutatietesten, op property-based testen en vele andere strategische en professionele tools worden behandeld.  Elk woord in deze gids zal de testvaardigheden boven het gemiddelde brengen.
 
 ## 🌐 Full-stack: front, backend, CI, anything
 
