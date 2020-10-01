@@ -66,14 +66,15 @@ Richtlijnen voor CI in de JavaScript wereld (9 punten)
 
 <br/><br/>
 
-# Section 0️⃣: The Golden Rule
+# Section 0️⃣: De Gouden Regel
 
 <br/>
 
-## ⚪️ 0 The Golden Rule: Design for lean testing
+## ⚪️ 0 De Gouden regel: Ontwerp voor lean testen
 
-:white_check_mark: **Do:**
-Testing code is not like production-code - design it to be dead-simple, short, abstraction-free, flat, delightful to work with, lean. One should look at a test and get the intent instantly.
+:white_check_mark: **Doen:**
+
+Test code is geen productie-code - ontwerp het om doodeenvoudig te zijn, kort, abstractie-vrij, vlak, heerlijk om mee te werken, lean. Iemand moet de test en de intentie direct begrijpen. 
 
 Our minds are full with the main production code, we don't have 'headspace' for additional complexity. Should we try to squeeze yet another challenging code into our poor brain it will slow the team down which works against the reason we do testing. Practically this is where many teams just abandon testing.
 
