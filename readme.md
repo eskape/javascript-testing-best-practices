@@ -6,9 +6,9 @@
 
 <br/>
 
-## 📗 45+ best practices: Super-comprehensive and exhaustive
+## 📗 45+ best practices: uitgebreid en uitputtend
 
-This is a guide for JavaScript & Node.js reliability from A-Z. It summarizes and curates for you dozens of the best blog posts, books and tools the market has to offer
+Dit is een gids voor de betrouwbaarheid van JavaScript & Node.js van A-Z. Het vat tientallen van de beste blogposts, boeken en tools die de markt te bieden heeft voor u samen.
 
 ## 🚢 Advanced: Goes 10,000 miles beyond the basics
 
