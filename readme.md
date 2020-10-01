@@ -58,7 +58,7 @@ Schrijven van web UI testen inclusief component en E2E tests (11 punten)
 
 #### [`Sectie 4: Effectiviteit van Testen meten`](#section-4️⃣-measuring-test-effectiveness)
 
-Kijken naar de watchman - meaten van test kwaliteit (4 punten)
+Kijken naar de watchman - meten van test kwaliteit (4 punten)
 
 #### [`Sectie 5: Continuous Integration`](#section-5️⃣-ci-and-other-quality-measures)
 
