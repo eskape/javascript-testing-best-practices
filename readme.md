@@ -23,9 +23,7 @@ Begin met het begrijpen van de testmethoden die de basis vormen voor elke applic
 ### Geschreven door Yoni Goldberg
 
 - Een JavaScript & Node.js consultant
-- 📗 [Testing Node.js & JavaScript From A To Z](https://www.testjavascript.com) - 
-45/5000
-Mijn uitgebreide online cursus met meer dan [10 uur aan video](https://www.testjavascript.com), 14 test types en meer dan 40 best practices
+- 📗 [Testing Node.js & JavaScript From A To Z](https://www.testjavascript.com) - Mijn uitgebreide online cursus met meer dan [10 uur aan video](https://www.testjavascript.com), 14 test types en meer dan 40 best practices
 - [Volg mij op Twitter ](https://twitter.com/goldbergyoni/)
 
 <br/>
