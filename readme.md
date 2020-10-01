@@ -2,7 +2,7 @@
 
 <br/>
 
-# 👇 Why this guide can take your testing skills to the next level
+# 👇 Waarom deze gids de testvaardigheden naar een hoger niveau kan tillen
 
 <br/>
 
