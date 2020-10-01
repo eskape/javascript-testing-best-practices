@@ -28,13 +28,13 @@ Begin met het begrijpen van de testmethoden die de basis vormen voor elke applic
 
 <br/>
 
-### Translations - read in your own language
+### Vertalingen - lees in je eigen taal
 
-- 🇨🇳[Chinese](readme-zh-CN.md) - courtesy of [Yves yao](https://github.com/yvesyao)
-- 🇰🇷[Korean](readme.kr.md) - courtesy of [Rain Byun](https://github.com/ragubyun)
-- 🇵🇱[Polish](readme-pl.md) - courtesy of [Michal Biesiada](https://github.com/mbiesiad)
-- 🇪🇸[Spanish](readme-es.md) - courtesy of [Miguel G. Sanguino](https://github.com/sanguino)
-- Want to translate to your own language? please open an issue 💜
+- 🇨🇳[Chinese](readme-zh-CN.md) - met dank aan [Yves yao](https://github.com/yvesyao)
+- 🇰🇷[Korean](readme.kr.md) - met dank aan [Rain Byun](https://github.com/ragubyun)
+- 🇵🇱[Polish](readme-pl.md) - met dank aan [Michal Biesiada](https://github.com/mbiesiad)
+- 🇪🇸[Spanish](readme-es.md) - met dank aan [Miguel G. Sanguino](https://github.com/sanguino)
+- Vertalen naar een eigen taal? open een issue 💜
 
 <br/><br/>
 
