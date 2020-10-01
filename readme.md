@@ -2,7 +2,7 @@
 
 <br/>
 
-# 👇 Waarom deze gids de testvaardigheden naar een hoger niveau kan tillen
+# 👇 Waarom deze gids de testvaardigheden naar een hoger niveau tilt
 
 <br/>
 
