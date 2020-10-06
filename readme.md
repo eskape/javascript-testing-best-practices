@@ -76,7 +76,8 @@ Richtlijnen voor CI in de JavaScript wereld (9 punten)
 
 Test code is geen productie-code - ontwerp het om doodeenvoudig te zijn, kort, abstractie-vrij, vlak, heerlijk om mee te werken, lean. Iemand moet de test en de intentie direct begrijpen. 
 
-Our minds are full with the main production code, we don't have 'headspace' for additional complexity. Should we try to squeeze yet another challenging code into our poor brain it will slow the team down which works against the reason we do testing. Practically this is where many teams just abandon testing.
+
+Ons hoofd zit al vol met de belangrijkste stukken productiecode, we hebben geen ruimte voor extra complexiteit. Als we proberen om andere uitdagende code in ons arme brein te persen, zal dat het team vertragen, wat tegenstrijdig is met de reden waarom we testen. Praktisch gezien is dit de reden waarom teams het testen in de steek laten.
 
 The tests are an opportunity for something else - a friendly and smiley assistant, one that it's delightful to work with and delivers great value for such a small investment. Science tells us that we have two brain systems: system 1 is used for effortless activities like driving a car on an empty road and system 2 which is meant for complex and conscious operations like solving a math equation. Design your test for system 1, when looking at test code it should _feel_ as easy as modifying an HTML document and not like solving 2X(17 × 24).
 
