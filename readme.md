@@ -79,7 +79,9 @@ Test code is geen productie-code - ontwerp het om doodeenvoudig te zijn, kort, a
 
 Ons hoofd zit al vol met de belangrijkste stukken productiecode, we hebben geen ruimte voor extra complexiteit. Als we proberen om andere uitdagende code in ons arme brein te persen, zal dat het team vertragen, wat tegenstrijdig is met de reden waarom we testen. Praktisch gezien is dit de reden waarom teams het testen in de steek laten.
 
-The tests are an opportunity for something else - a friendly and smiley assistant, one that it's delightful to work with and delivers great value for such a small investment. Science tells us that we have two brain systems: system 1 is used for effortless activities like driving a car on an empty road and system 2 which is meant for complex and conscious operations like solving a math equation. Design your test for system 1, when looking at test code it should _feel_ as easy as modifying an HTML document and not like solving 2X(17 × 24).
+Testen is een kans, heerlijk om mee te werken en die een grote meerwaarde biedt voor zo'n kleine investering. Het is een vriendelijke en goedlachse assistent.
+
+De wetenschap vertelt ons dat we twee hersensystemen hebben: systeem 1 wordt gebruikt voor moeiteloze activiteiten zoals autorijden op een lege weg en systeem 2 dat bedoeld is voor complexe en bewuste operaties zoals het oplossen van een wiskundige vergelijking. Ontwerp je test voor systeem 1, als je naar testcode kijkt, zou het net zo eenvoudig moeten zijn als het aanpassen van een HTML-document. En niet het oplossen van bijvoorbeeld 2X (17 × 24).
 
 This can be achieved by selectively cherry-picking techniques, tools and test targets that are cost-effective and provide great ROI. Test only as much as needed, strive to keep it nimble, sometimes it's even worth dropping some tests and trade reliability for agility and simplicity.
 
