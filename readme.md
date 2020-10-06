@@ -152,27 +152,28 @@ describe('Products Service', function() {
 
 <br/><br/>
 
-## ⚪ ️ 1.2 Structure tests by the AAA pattern
+## ⚪ ️ 1.2 Structureer tests met de AAA pattern
 
-:white_check_mark: **Do:** Structure your tests with 3 well-separated sections Arrange, Act & Assert (AAA). Following this structure guarantees that the reader spends no brain-CPU on understanding the test plan:
+:white_check_mark: **Doen:** Structureer je test met 3 Structure your tests with 3 goed gescheiden secties Arrange, Act & Assert (AAA). Het volgen van deze structuur garandeert dat de lezer geen hersen-CPU uitgeeft om de test te begrijpen.
 
-1st A - Arrange: All the setup code to bring the system to the scenario the test aims to simulate. This might include instantiating the unit under test constructor, adding DB records, mocking/stubbing on objects and any other preparation code
+1e A - Arrange (Inrichten): Alle setup code die nodig is om het systeem naar het scenario te brengen dat de test probeert te simuleren. 
+Dit kan het instantiëren van de unit die je wilt testen, het toevoegen van DB-records, het mocken/stubben van objecten en andere voorbereidingscode.
 
-2nd A - Act: Execute the unit under test. Usually 1 line of code
+2e A - Act (Uitvoeren): Voer de unit wat getest moet worden uit. Meestal is dat 1 regel code.
 
-3rd A - Assert: Ensure that the received value satisfies the expectation. Usually 1 line of code
-
-<br/>
-
-❌ **Otherwise:** Not only do you spend hours understanding the main code, but what should have been the simplest part of the day (testing) stretches your brain
+3e A - Assert (Verificatie): Zorg ervoor dat de ontvangen waarde voldoet aan de verwachting. Meestal 1 regel code.
 
 <br/>
 
-<details><summary>✏ <b>Code Examples</b></summary>
+❌ **Anders:** Je besteedt niet alleen uren aan het begrijpen van de hoofdcode, maar wat het eenvoudigste deel van de dag had moeten zijn (testen), rekt je hersenen uit
 
 <br/>
 
-### :clap: Doing It Right Example: A test structured with the AAA pattern
+<details><summary>✏ <b>Code Voorbeelden</b></summary>
+
+<br/>
+
+### :clap: Het juist doen Voorbeeld: Een test gestructureerd met het AAA patroon
 
 ![](https://img.shields.io/badge/🔧%20Example%20using%20Jest-blue.svg "Examples with Jest") ![](https://img.shields.io/badge/🔧%20Example%20using%20Mocha-blue.svg "Examples with Mocha")
 
@@ -194,7 +195,7 @@ describe("Customer classifier", () => {
 
 <br/>
 
-### :thumbsdown: Anti-Pattern Example: No separation, one bulk, harder to interpret
+### :thumbsdown: Anti-Pattern Voorbeeld: Geen scheiding, één bulk, moeilijker te interpreteren
 
 ```javascript
 test("Should be classified as premium", () => {
