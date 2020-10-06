@@ -119,7 +119,7 @@ De meeste van de onderstaande adviezen zijn afgeleid van dit principe.
   
 <br/>
   
-### :clap: Het juist doen Voorbeeld: Een test naam die uit 3 onderdelen bestaat
+### :clap: Het juiste Voorbeeld: Een test naam die uit 3 onderdelen bestaat
 
 ![](https://img.shields.io/badge/🔨%20Example%20using%20Mocha-blue.svg "Maakt gebruik van Mocha om het idee te illustreren")
 
@@ -139,7 +139,7 @@ describe('Products Service', function() {
 
 <br/>
 
-### :clap: Het juist doen Voorbeeld: Een test naam die uit 3 onderdelen bestaat
+### :clap: Het juiste Voorbeeld: Een test naam die uit 3 onderdelen bestaat
 
 ![alt text](/assets/bp-1-3-parts.jpeg "Een test naam die uit 3 onderdelen bestaat")
 
@@ -173,7 +173,7 @@ Dit kan het instantiëren van de unit die je wilt testen, het toevoegen van DB-r
 
 <br/>
 
-### :clap: Het juist doen Voorbeeld: Een test gestructureerd met het AAA patroon
+### :clap: Het juiste Voorbeeld: Een test gestructureerd met het AAA patroon
 
 ![](https://img.shields.io/badge/🔧%20Example%20using%20Jest-blue.svg "Examples with Jest") ![](https://img.shields.io/badge/🔧%20Example%20using%20Mocha-blue.svg "Examples with Mocha")
 
@@ -210,20 +210,20 @@ test("Should be classified as premium", () => {
 
 <br/><br/>
 
-## ⚪ ️1.3 Describe expectations in a product language: use BDD-style assertions
+## ⚪ ️1.3 Beschrijf verwachtingen in een producttaal: gebruik beweringen in BDD-stijl
 
-:white_check_mark: **Do:** Coding your tests in a declarative-style allows the reader to get the grab instantly without spending even a single brain-CPU cycle. When you write imperative code that is packed with conditional logic, the reader is forced to exert more brain-CPU cycles. In that case, code the expectation in a human-like language, declarative BDD style using `expect` or `should` and not using custom code. If Chai & Jest doesn't include the desired assertion and it’s highly repeatable, consider [extending Jest matcher (Jest)](https://jestjs.io/docs/en/expect#expectextendmatchers) or writing a [custom Chai plugin](https://www.chaijs.com/guide/plugins/)
+:white_check_mark: **Doen:** Declaratieve stijl van testen coderen, kan de lezer de intentie onmiddellijk begrijpen zonder zelfs maar een enkele hersen-CPU-cyclus te besteden. Wanneer we dwingende code schrijven vol met voorwaardelijke logica, wordt de lezer gedwongen om meer hersen-CPU-cycli uit te voeren. Codeer in dat geval de verwachting in een mensachtige taal, declaratieve BDD-stijl met ` expect` of `should` en niet met aangepaste code. Als Chai & Jest niet de gewenste verificatie bevat en het is zeer herhaalbaar, overweeg dan [extending Jest matcher (Jest)](https://jestjs.io/docs/en/expect#expectextendmatchers) of schrijf een [custom Chai plugin](https://www.chaijs.com/guide/plugins/)
 <br/>
 
-❌ **Otherwise:** The team will write less tests and decorate the annoying ones with .skip()
+❌ **Anders:** Team zal minder testen schrijven markeren de vervelende met .skip()
 
 <br/>
 
-<details><summary>✏ <b>Code Examples</b></summary><br/>
+<details><summary>✏ <b>Code Voorbeelden</b></summary><br/>
 
 ![](https://img.shields.io/badge/🔧%20Example%20using%20Mocha-blue.svg "Examples with Mocha & Chai") ![](https://img.shields.io/badge/🔧%20Example%20using%20Jest-blue.svg "Examples with Jest")
 
-### :thumbsdown: Anti-Pattern Example: The reader must skim through not so short, and imperative code just to get the test story
+### :thumbsdown: Anti-Pattern Voorbeeld: De lezer moet door lange en dwingende code duiken om het verhaal achter de test te begrijpen
 
 ```javascript
 test("When asking for an admin, ensure only ordered admins in results", () => {
@@ -253,7 +253,7 @@ test("When asking for an admin, ensure only ordered admins in results", () => {
 
 <br/>
 
-### :clap: Doing It Right Example: Skimming through the following declarative test is a breeze
+### :clap: Het juiste Voorbeeld: Door de volgende declaratieve test lezen is een makkie
 
 ```javascript
 it("When asking for an admin, ensure only ordered admins in results", () => {
