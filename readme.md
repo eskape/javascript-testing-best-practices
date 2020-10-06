@@ -108,14 +108,14 @@ De meeste van de onderstaande adviezen zijn afgeleid van dit principe.
 
 <br/>
 
-❌ **Otherwise:** A deployment just failed, a test named “Add product” failed. Does this tell you what exactly is malfunctioning?
+❌ **Otherwise:** Een deployment is zojuist gefaald, een test genaamd "Add product" faalde. Vertelt dit wat er precies defect is?
 
 <br/>
 
-**👇 Note:** Each bullet has code examples and sometime also an image illustration. Click to expand
+**👇 Note:** Elk punt heeft code voorbeelden en some een illustratie. Klik om uit te breiden.
 <br/>
 
-<details><summary>✏ <b>Code Examples</b></summary>
+<details><summary>✏ <b>Code Voorbeelden</b></summary>
   
 <br/>
   
