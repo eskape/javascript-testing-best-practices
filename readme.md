@@ -108,20 +108,20 @@ De meeste van de onderstaande adviezen zijn afgeleid van dit principe.
 
 <br/>
 
-❌ **Otherwise:** Een deployment is zojuist gefaald, een test genaamd "Add product" faalde. Vertelt dit wat er precies defect is?
+❌ **Anders:** Een deployment is zojuist gefaald, een test genaamd "Add product" faalde. Vertelt dit wat er precies defect is?
 
 <br/>
 
-**👇 Note:** Elk punt heeft code voorbeelden en some een illustratie. Klik om uit te breiden.
+**👇 Aantekening:** Elk punt heeft code voorbeelden en some een illustratie. Klik om uit te breiden.
 <br/>
 
 <details><summary>✏ <b>Code Voorbeelden</b></summary>
   
 <br/>
   
-### :clap: Doing It Right Example: A test name that constitutes 3 parts
+### :clap: Het juist doen Voorbeeld: Een test naam die uit 3 onderdelen bestaat
 
-![](https://img.shields.io/badge/🔨%20Example%20using%20Mocha-blue.svg "Using Mocha to illustrate the idea")
+![](https://img.shields.io/badge/🔨%20Example%20using%20Mocha-blue.svg "Maakt gebruik van Mocha om het idee te illustreren")
 
 ```javascript
 //1. unit under test
