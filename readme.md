@@ -80,20 +80,19 @@ Test code is geen productie-code - ontwerp het om doodeenvoudig te zijn, kort, a
 Ons hoofd zit al vol met de belangrijkste stukken productiecode, we hebben geen ruimte voor extra complexiteit. Als we proberen om andere uitdagende code in ons arme brein te persen, zal dat het team vertragen, wat tegenstrijdig is met de reden waarom we testen. Praktisch gezien is dit de reden waarom teams het testen in de steek laten.
 
 Testen is een kans, heerlijk om mee te werken en die een grote meerwaarde biedt voor zo'n kleine investering. Het is een vriendelijke en goedlachse assistent.
-
 De wetenschap vertelt ons dat we twee hersensystemen hebben: systeem 1 wordt gebruikt voor moeiteloze activiteiten zoals autorijden op een lege weg en systeem 2 dat bedoeld is voor complexe en bewuste operaties zoals het oplossen van een wiskundige vergelijking. Ontwerp je test voor systeem 1, als je naar testcode kijkt, zou het net zo eenvoudig moeten zijn als het aanpassen van een HTML-document. En niet het oplossen van bijvoorbeeld 2X (17 × 24).
 
-This can be achieved by selectively cherry-picking techniques, tools and test targets that are cost-effective and provide great ROI. Test only as much as needed, strive to keep it nimble, sometimes it's even worth dropping some tests and trade reliability for agility and simplicity.
+Dit kan worden bereikt door selectieve cherry-picking-technieken, tools en testdoelen die kosteneffectief zijn en een geweldige ROI opleveren. Test alleen zoveel als nodig is, streef ernaar om het wendbaar te houden, soms is het zelfs de moeite waard om enkele tests te laten vallen en betrouwbaarheid in te ruilen voor behendigheid en eenvoud.
 
-![alt text](/assets/headspace.png "We have no head room for additional complexity")
+![alt text](/assets/headspace.png "We hebben geen ruimte in ons hoofd voor extra complexitieit")
 
-Most of the advice below are derivatives of this principle.
+De meeste van de onderstaande adviezen zijn afgeleid van dit principe.
 
-### Ready to start?
+### Klaar om te starten?
 
 <br/><br/>
 
-# Section 1: The Test Anatomy
+# Sectie 1: De testanatomie
 
 <br/>
 
