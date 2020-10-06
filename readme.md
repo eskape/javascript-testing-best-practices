@@ -96,15 +96,15 @@ De meeste van de onderstaande adviezen zijn afgeleid van dit principe.
 
 <br/>
 
-## ⚪ ️ 1.1 Include 3 parts in each test name
+## ⚪ ️ 1.1 Neem 3 delen op in elke testnaam
 
-:white_check_mark: **Do:** A test report should tell whether the current application revision satisfies the requirements for the people who are not necessarily familiar with the code: the tester, the DevOps engineer who is deploying and the future you two years from now. This can be achieved best if the tests speak at the requirements level and include 3 parts:
+:white_check_mark: **Doen:** Een testrapport moet uitwijzen of de huidige applicatierevisie voldoet aan de eisen voor de mensen die niet persé bekend zijn met de code: de tester, de DevOps engineer en de toekomstige jij, twee jaar van nu.  Dit kan het beste worden bereikt als de tests op het niveau van de vereisten spreken en uit 3 onderdelen bestaan:
 
-(1) What is being tested? For example, the ProductsService.addNewProduct method
+(1) Wat wordt er getest? Bijvoorbeeld de methode ProductsService.addNewProduct
 
-(2) Under what circumstances and scenario? For example, no price is passed to the method
+(2) Onder welke omstandigheden en scenario? Er wordt bijvoorbeeld geen prijs doorgegeven aan de methode
 
-(3) What is the expected result? For example, the new product is not approved
+(3) Wat is het verwachte resultaat? Het nieuwe product is bijvoorbeeld niet goedgekeurd
 
 <br/>
 
