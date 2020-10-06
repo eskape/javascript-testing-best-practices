@@ -139,9 +139,9 @@ describe('Products Service', function() {
 
 <br/>
 
-### :clap: Doing It Right Example: A test name that constitutes 3 parts
+### :clap: Het juist doen Voorbeeld: Een test naam die uit 3 onderdelen bestaat
 
-![alt text](/assets/bp-1-3-parts.jpeg "A test name that constitutes 3 parts")
+![alt text](/assets/bp-1-3-parts.jpeg "Een test naam die uit 3 onderdelen bestaat")
 
 </details>
 
