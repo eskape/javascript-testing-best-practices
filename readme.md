@@ -281,7 +281,7 @@ it("When asking for an admin, ensure only ordered admins in results", () => {
 
 <br/>
 
-### :thumbsdown: Anti-Pattern Example: A test case is testing the internals for no good reason
+### :thumbsdown: Anti-Pattern Voorbeeld: Een test case test de internals zonder goede reden
 
 ![](https://img.shields.io/badge/🔧%20Example%20using%20Mocha-blue.svg "Examples with Mocha & Chai")
 
