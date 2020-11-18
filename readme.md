@@ -311,24 +311,24 @@ it("White-box test: When the internal methods get 0 vat, it return 0 response", 
 
 <br/><br/>
 
-## ⚪ ️ ️1.5 Choose the right test doubles: Avoid mocks in favor of stubs and spies
+## ⚪ ️ ️1.5 Kies de juiste test doubles: Voorkom mocks ten gunste van stubs en spies
 
-:white_check_mark: **Do:** Test doubles are a necessary evil because they are coupled to the application internals, yet some provide immense value (<a href="https://martinfowler.com/articles/mocksArentStubs.html" data-href="https://martinfowler.com/articles/mocksArentStubs.html" class="markup--anchor markup--p-anchor" rel="noopener nofollow" target="_blank">[Read here a reminder about test doubles: mocks vs stubs vs spies](https://martinfowler.com/articles/mocksArentStubs.html)</a>).
+:white_check_mark: **Doen:** Test doubles zijn een noodzakelijk kwaad omdat ze gekoppeld zijn aan de internals van de applicatie, toch bieden sommige een enorme waarde (<a href="https://martinfowler.com/articles/mocksArentStubs.html" data-href="https://martinfowler.com/articles/mocksArentStubs.html" class="markup--anchor markup--p-anchor" rel="noopener nofollow" target="_blank">[Lees hier een herinneren over testdoubles: mocks vs stubs vs spies](https://martinfowler.com/articles/mocksArentStubs.html)</a>).
 
-Before using test doubles, ask a very simple question: Do I use it to test functionality that appears, or could appear, in the requirements document? If no, it’s a white-box testing smell.
+Voordat je testdubbels gebruikt, moet je een heel eenvoudige vraag stellen: gebruik ik deze om functionaliteit te testen die in de requirements verschijnt of zou kunnen verschijnen? Zo nee, dan is het een white-box testing smell.
 
-For example, if you want to test that your app behaves reasonably when the payment service is down, you might stub the payment service and trigger some ‘No Response’ return to ensure that the unit under test returns the right value. This checks our application behavior/response/outcome under certain scenarios. You might also use a spy to assert that an email was sent when that service is down — this is again a behavioral check which is likely to appear in a requirements doc (“Send an email if payment couldn’t be saved”). On the flip side, if you mock the Payment service and ensure that it was called with the right JavaScript types — then your test is focused on internal things that got nothing with the application functionality and are likely to change frequently
+Als je bijvoorbeeld wilt testen of uw app zich redelijk gedraagt wanneer de betalingsservice niet beschikbaar is, kun je de betalingsservice stubben en een ‘No Response’ laten retourneren om ervoor te zorgen dat de unit die wordt getest de juiste waarde retourneert. Dit controleert ons applicatiegedrag / respons / resultaat onder bepaalde scenario's. Je kunt ook een spy gebruiken om te controleren dat er een e-mail verzonden is toen die service niet beschikbaar was - dit is opnieuw een gedragscontrole die waarschijnlijk zal verschijnen in de requirements ("Stuur een e-mail als de betaling niet kon worden opgeslagen"). Aan de andere kant, als je de betalingsservice mockt en ervoor zorgt dat deze werd aangeroepen met de juiste JavaScript-typen, dan is je test gericht op interne zaken die niets hebben met de functionaliteit van de applicatie en die waarschijnlijk vaak zullen veranderen
 <br/>
 
-❌ **Otherwise:** Any refactoring of code mandates searching for all the mocks in the code and updating accordingly. Tests become a burden rather than a helpful friend
-
-<br/>
-
-<details><summary>✏ <b>Code Examples</b></summary>
+❌ **Anders:** Elke herstructurering/wijziging van code vereist zoeken naar alle mocks in de code en dient overeenkomstig bijgewerkt te worden. Tests worden eerder een last dan een behulpzame vriend
 
 <br/>
 
-### :thumbsdown: Anti-pattern example: Mocks focus on the internals
+<details><summary>✏ <b>Code Voorbeelden</b></summary>
+
+<br/>
+
+### :thumbsdown: Anti-pattern voorbeeld: Mocks met focus op internals
 
 ![](https://img.shields.io/badge/🔧%20Example%20using%20Sinon-blue.svg "Examples with Sinon")
 
@@ -348,7 +348,7 @@ it("When a valid product is about to be deleted, ensure data access DAL was call
 
 <br/>
 
-### :clap:Doing It Right Example: spies are focused on testing the requirements but as a side-effect are unavoidably touching to the internals
+### :clap:Het juiste Voorbeeld: spies gefocussed op het testen van requirements, maar als een bijwerking zijn de interne onderdelen onvermijdelijk 
 
 ```javascript
 it("When a valid product is about to be deleted, ensure an email is sent", async () => {
@@ -364,9 +364,9 @@ it("When a valid product is about to be deleted, ensure an email is sent", async
 
 <br/><br/>
 
-## 📗 Want to learn all these practices with live video?
+## 📗 Wil je al deze praktijken leren met live video?
 
-### Visit my online course [Testing Node.js & JavaScript From A To Z](https://www.testjavascript.com)
+### Bezoek mijn online cursus [Testing Node.js & JavaScript From A To Z](https://www.testjavascript.com)
 
 <br/><br/>
 
