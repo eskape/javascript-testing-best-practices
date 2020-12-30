@@ -372,18 +372,17 @@ it("When a valid product is about to be deleted, ensure an email is sent", async
 
 ## ⚪ ️1.6 Gebruik geen “foo”, maar gebruik realistische input data
 
-:white_check_mark: **Doen:** Vaak worden productiebugs onthuld onder een aantal zeer specifieke en verrassende input - hoe realistischer de testinvoer is, hoe groter de kans is dat bugs vroegtijdig worden ontdekt. Gebruik speciale bibliotheken zoals [Faker] (https://www.npmjs.com/package/faker) om pseudo-echte gegevens te genereren die lijken op de verscheidenheid en vorm van productiegegevens. Dergelijke bibliotheken kunnen bijvoorbeeld realistische telefoonnummers, gebruikersnamen, creditcard-, bedrijfsnamen en zelfs ‘lorem ipsum'-tekst genereren. Tests kunnen gemaakt worden (bovenop unit-tests, niet als vervanging) die fakersgegevens willekeurig verdelen om uw te testen eenheid uit te rekken of zelfs echte gegevens uit uw productieomgeving importeren. Wil je het naar een hoger niveau tillen? Zie het volgende (property-based testing).
+:white_check_mark: **Doen:** Vaak worden productiebugs onthuld onder een aantal zeer specifieke en verrassende input - hoe realistischer de testinvoer is, hoe groter de kans is dat bugs vroegtijdig worden ontdekt. Gebruik speciale bibliotheken zoals [Faker](https://www.npmjs.com/package/faker) om pseudo-echte gegevens te genereren die lijken op de verscheidenheid en vorm van productiegegevens. Dergelijke bibliotheken kunnen bijvoorbeeld realistische telefoonnummers, gebruikersnamen, creditcard-, bedrijfsnamen en zelfs ‘lorem ipsum'-tekst genereren. Tests kunnen gemaakt worden (bovenop unit-tests, niet als vervanging) die fakersgegevens willekeurig verdelen om uw te testen eenheid uit te rekken of zelfs echte gegevens uit uw productieomgeving importeren. Wil je het naar een hoger niveau tillen? Zie het volgende (property-based testing).
 <br/>
 
-❌ **Otherwise:** All your development testing will falsely show green when you use synthetic inputs like “Foo”, but then production might turn red when a hacker passes-in a nasty string like “@3e2ddsf . ##’ 1 fdsfds . fds432 AAAA”
+❌ **Anders:** Development tests zullen ten onrechte groen worden weergegeven als synthetische invoer wordt gebruikt zoals "Foo" gebruikt, maar de productie kan rood worden wanneer een hacker een vervelende string zoals "@3e2ddsf" invoert . ## ’1 fdsfds. fds432 AAAA "
+<br/>
+
+<details><summary>✏ <b>Code Voorbeelden</b></summary>
 
 <br/>
 
-<details><summary>✏ <b>Code Examples</b></summary>
-
-<br/>
-
-### :thumbsdown: Anti-Pattern Example: A test suite that passes due to non-realistic data
+### :thumbsdown: Anti-Pattern Voorbeeld: Een test suite dat slaagt door niet realistische data
 
 ![](https://img.shields.io/badge/🔧%20Example%20using%20Jest-blue.svg "Examples with Jest")
 
@@ -408,7 +407,7 @@ test("Wrong: When adding new product with valid properties, get successful confi
 
 <br/>
 
-### :clap:Doing It Right Example: Randomizing realistic input
+### :clap:Het juiste voorbeeld: Randomizing realistische input
 
 ```javascript
 it("Better: When adding new valid product, get successful confirmation", async () => {
