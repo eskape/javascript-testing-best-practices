@@ -423,20 +423,19 @@ it("Better: When adding new valid product, get successful confirmation", async (
 
 <br/><br/>
 
-## ⚪ ️ 1.7 Test many input combinations using Property-based testing
+## ⚪ ️ 1.7 Test veel invoercombinaties met behulp van property based testing
 
-:white_check_mark: **Do:** Typically we choose a few input samples for each test. Even when the input format resembles real-world data (see bullet ‘Don’t foo’), we cover only a few input combinations (method(‘’, true, 1), method(“string” , false” , 0)), However, in production, an API that is called with 5 parameters can be invoked with thousands of different permutations, one of them might render our process down ([see Fuzz Testing](https://en.wikipedia.org/wiki/Fuzzing)). What if you could write a single test that sends 1000 permutations of different inputs automatically and catches for which input our code fails to return the right response? Property-based testing is a technique that does exactly that: by sending all the possible input combinations to your unit under test it increases the serendipity of finding a bug. For example, given a method — addNewProduct(id, name, isDiscount) — the supporting libraries will call this method with many combinations of (number, string, boolean) like (1, “iPhone”, false), (2, “Galaxy”, true). You can run property-based testing using your favorite test runner (Mocha, Jest, etc) using libraries like [js-verify](https://github.com/jsverify/jsverify) or [testcheck](https://github.com/leebyron/testcheck-js) (much better documentation). Update: Nicolas Dubien suggests in the comments below to [checkout fast-check](https://github.com/dubzzz/fast-check#readme) which seems to offer some additional features and also to be actively maintained
+:white_check_mark: **Doen:** Meestal kiezen we voor elke test een paar invoermonsters. Zelfs als het invoerformaat lijkt op gegevens uit de echte wereld (zie opsommingsteken 'Gebruik geen foo'), behandelen we slechts een paar invoercombinaties (method ('', true, 1), method ("string", false ", 0) ), Maar in productie kan een API die wordt aangeroepen met 5 parameters worden aangeroepen met duizenden verschillende permutaties, een ervan kan ons proces verslechten ([zie Fuzz Testing](https://en.wikipedia.org/wiki/Fuzzing)). Wat als er een enkele test zou kunnen worden geschreven die automatisch 1000 permutaties van verschillende inputs verzendt en ontdekt dat onze code niet het juiste antwoord geeft? Property based testing is een techniek die precies dat doet: door alle mogelijke invoercombinaties te gebruiken, verhoogt het de kans op het vinden van een bug. Gegeven een methode - addNewProduct (id, naam, isDiscount) - zullen de ondersteunende bibliotheken deze methode aanroepen met veel combinaties van (nummer, tekenreeks, boolean) zoals (1, "iPhone", false), (2, "Galaxy ”, Waar). Property based testing kan uitgevoerd worden met verschillende testrunner (Mocha, Jest, enz.) Met behulp van bibliotheken zoals [js-verify](https://github.com/jsverify/jsverify) of [testcheck](https://github.com/leebyron/testcheck-js) (veel betere documentatie). Update: Nicolas Dubien suggereert in de reacties hieronder om [checkout fast-check](https://github.com/dubzzz/fast-check#readme) te gebruiken, die enkele extra functies lijkt te bieden en ook actief wordt onderhouden
 <br/>
 
-❌ **Otherwise:** Unconsciously, you choose the test inputs that cover only code paths that work well. Unfortunately, this decreases the efficiency of testing as a vehicle to expose bugs
+❌ **Anders:** Onbewust kiezen we de testinputs die alleen codepaden dekken die goed werken. Helaas vermindert dit de efficiëntie van het testen om bugs bloot te leggen
+<br/>
+
+<details><summary>✏ <b>Code Voorbeelden</b></summary>
 
 <br/>
 
-<details><summary>✏ <b>Code Examples</b></summary>
-
-<br/>
-
-### :clap: Doing It Right Example: Testing many input permutations with “fast-check”
+### :clap: Het juiste voorbeeld: Veel invoerpermutaties testen met “fast-check”
 
 ![](https://img.shields.io/badge/🔧%20Example%20using%20Jest-blue.svg "Examples with Jest")
 
