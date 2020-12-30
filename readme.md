@@ -370,9 +370,9 @@ it("When a valid product is about to be deleted, ensure an email is sent", async
 
 <br/><br/>
 
-## ⚪ ️1.6 Don’t “foo”, use realistic input data
+## ⚪ ️1.6 Gebruik geen “foo”, maar gebruik realistische input data
 
-:white_check_mark: **Do:** Often production bugs are revealed under some very specific and surprising input — the more realistic the test input is, the greater the chances are to catch bugs early. Use dedicated libraries like [Faker](https://www.npmjs.com/package/faker) to generate pseudo-real data that resembles the variety and form of production data. For example, such libraries can generate realistic phone numbers, usernames, credit card, company names, and even ‘lorem ipsum’ text. You may also create some tests (on top of unit tests, not as a replacement) that randomize fakers data to stretch your unit under test or even import real data from your production environment. Want to take it to the next level? See the next bullet (property-based testing).
+:white_check_mark: **Doen:** Vaak worden productiebugs onthuld onder een aantal zeer specifieke en verrassende input - hoe realistischer de testinvoer is, hoe groter de kans is dat bugs vroegtijdig worden ontdekt. Gebruik speciale bibliotheken zoals [Faker] (https://www.npmjs.com/package/faker) om pseudo-echte gegevens te genereren die lijken op de verscheidenheid en vorm van productiegegevens. Dergelijke bibliotheken kunnen bijvoorbeeld realistische telefoonnummers, gebruikersnamen, creditcard-, bedrijfsnamen en zelfs ‘lorem ipsum'-tekst genereren. Tests kunnen gemaakt worden (bovenop unit-tests, niet als vervanging) die fakersgegevens willekeurig verdelen om uw te testen eenheid uit te rekken of zelfs echte gegevens uit uw productieomgeving importeren. Wil je het naar een hoger niveau tillen? Zie het volgende (property-based testing).
 <br/>
 
 ❌ **Otherwise:** All your development testing will falsely show green when you use synthetic inputs like “Foo”, but then production might turn red when a hacker passes-in a nasty string like “@3e2ddsf . ##’ 1 fdsfds . fds432 AAAA”
