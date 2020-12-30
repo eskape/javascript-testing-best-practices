@@ -2,13 +2,13 @@
 
 <br/>
 
-# 👇 Waarom deze gids de testvaardigheden naar een hoger niveau tilt
+# 👇 Waarom deze gids de testvaardigheden naareen hoger niveau tilt
 
 <br/>
 
 ## 📗 45+ best practices: uitgebreid en uitputtend
 
-Dit is een gids voor de betrouwbaarheid van JavaScript & Node.js van A-Z. Het vat tientallen van de beste blogposts, boeken en tools die de markt te bieden heeft voor u samen.
+Dit is een gids voor de betrouwbaarheid van JavaScript & Node.js van A-Z. Het vat tientallen van de beste blogposts, boeken en tools die de markt te bieden heeft samen.
 
 ## 🚢 Geavanceerd: gaat verder dan de basis
 
