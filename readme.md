@@ -528,17 +528,18 @@ it("When visiting TestJavaScript.com home page, a menu is displayed", () => {
 ## ⚪ ️1.9 Vermijd globale fixtures en seeds, voeg gegevens per test toe
 
 :white_check_mark: **Doen:** Going by the golden rule (bullet 0), each test should add and act on its own set of DB rows to prevent coupling and easily reason about the test flow. In reality, this is often violated by testers who seed the DB with data before running the tests ([also known as ‘test fixture’](https://en.wikipedia.org/wiki/Test_fixture)) for the sake of performance improvement. While performance is indeed a valid concern — it can be mitigated (see “Component testing” bullet), however, test complexity is a much painful sorrow that should govern other considerations most of the time. Practically, make each test case explicitly add the DB records it needs and act only on those records. If performance becomes a critical concern — a balanced compromise might come in the form of seeding the only suite of tests that are not mutating data (e.g. queries)
+
+Volgens de gouden regel (bullet 0) moet elke test een eigen set DB-rijen toevoegen en hierop reageren om koppeling te voorkomen en gemakkelijk de testflow te begrijpen. In werkelijkheid wordt dit vaak geschonden door testers die de database voorzien van gegevens voordat de tests worden uitgevoerd ([ook bekend als 'test fixture'](https://en.wikipedia.org/wiki/Test_fixture)) omwille van prestatie verbetering. Hoewel prestatie inderdaad een terechte zorg is - kan het worden verzacht (zie punt “Component testing”), maar de testcomplexiteit is een zeer pijnlijk verdriet dat meestal andere overwegingen zou moeten beheersen. Zorg er praktisch voor dat elke testcase expliciet de DB-records toevoegt die het nodig heeft en handel alleen op die records. Als prestaties van de testuitvoer een kritieke zorg wordt, kan er een compromis komen in de vorm van het voorzien van testdata bij testen die geen gegevens muteren (bijv.query's)
 <br/>
 
-❌ **Otherwise:** Few tests fail, a deployment is aborted, our team is going to spend precious time now, do we have a bug? let’s investigate, oh no — it seems that two tests were mutating the same seed data
+❌ **Anders:** Er zijn maar weinig tests die falen, een deployment wordt afgebroken, ons team gaat nu kostbare tijd besteden, hebben we een bug? laten we eens kijken, oh nee - het lijkt erop dat twee tests dezelfde testgegevens muteerden
+<br/>
+
+<details><summary>✏ <b>Code Voorbeelden</b></summary>
 
 <br/>
 
-<details><summary>✏ <b>Code Examples</b></summary>
-
-<br/>
-
-### :thumbsdown: Anti-Pattern Example: tests are not independent and rely on some global hook to feed global DB data
+### :thumbsdown: Anti-Pattern Voorbeeld: tests zijn niet onafhankelijk en vertrouwen op een globale hook om globale DB-gegevens te voeden
 
 ![](https://img.shields.io/badge/🔧%20Example%20using%20Mocha-blue.svg "Examples with Mocha")
 
@@ -563,7 +564,7 @@ it("When querying by site name, get the right site", async () => {
 
 <br/>
 
-### :clap: Doing It Right Example: We can stay within the test, each test acts on its own set of data
+### :clap: Het juiste voorbeeld: We kunnen binnen de test blijven, elke test handelt op zijn eigen set gegevens
 
 ```javascript
 it("When updating site name, get successful confirmation", async () => {
