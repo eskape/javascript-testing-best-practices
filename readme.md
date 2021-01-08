@@ -459,24 +459,23 @@ describe("Product service", () => {
 
 <br/><br/>
 
-## ⚪ ️ 1.8 If needed, use only short & inline snapshots
+## ⚪ ️ 1.8 Gebruik indien nodig alleen korte en inline snapshots
 
-:white_check_mark: **Do:** When there is a need for [snapshot testing](https://jestjs.io/docs/en/snapshot-testing), use only short and focused snapshots (i.e. 3-7 lines) that are included as part of the test ([Inline Snapshot](https://jestjs.io/docs/en/snapshot-testing#inline-snapshots)) and not within external files. Keeping this guideline will ensure your tests remain self-explanatory and less fragile.
+:white_check_mark: **Doen:** Als er behoefte is aan [snapshot testing](https://jestjs.io/docs/en/snapshot-testing), gebruik dan alleen korte en gerichte snapshots (dwz 3-7 regels) die zijn opgenomen als onderdeel van de test ([Inline Snapshot](https://jestjs.io/docs/en/snapshot-testing#inline-snapshots)) en niet in externe bestanden. Deze zorgt ervoor dat tests voor zichzelf spreken en minder kwetsbaar zijn.
 
-On the other hand, ‘classic snapshots’ tutorials and tools encourage to store big files (e.g. component rendering markup, API JSON result) over some external medium and ensure each time when the test run to compare the received result with the saved version. This, for example, can implicitly couple our test to 1000 lines with 3000 data values that the test writer never read and reasoned about. Why is this wrong? By doing so, there are 1000 reasons for your test to fail - it’s enough for a single line to change for the snapshot to get invalid and this is likely to happen a lot. How frequently? for every space, comment or minor CSS/HTML change. Not only this, the test name wouldn’t give a clue about the failure as it just checks that 1000 lines didn’t change, also it encourages to the test writer to accept as the desired true a long document he couldn’t inspect and verify. All of these are symptoms of obscure and eager test that is not focused and aims to achieve too much
+Aan de andere kant moedigen ‘klassieke snapshots’ tutorials en tools aan om grote bestanden (bijv. Component rendering markup, API JSON-resultaat) op een extern medium op te slaan en ervoor te zorgen dat elke keer dat de test wordt uitgevoerd, het ontvangen resultaat wordt vergeleken met de opgeslagen versie. Dit kan bijvoorbeeld onze test impliciet koppelen aan 1000 regels met 3000 datawaarden die de testschrijver nooit heeft gelezen en waarover de reden onbekend is. Waarom is dit fout? Door dit te doen, zijn er 1000 redenen waarom een test mislukt - het volstaat dat één regel verandert om de momentopname ongeldig te maken, en dit zal waarschijnlijk vaak gebeuren. Hoe vaak? voor elke spatie, opmerking of kleine CSS / HTML-wijziging. Niet alleen dit, de testnaam zou geen idee geven van de storing, omdat het alleen controleert of 1000 regels niet zijn veranderd, het moedigt de testschrijver ook aan om een lang document dat hij niet kon inspecteren als de gewenste waarheid te accepteren en verifiëren. Dit zijn allemaal symptomen van een obscure en gretige test die niet gefocust is en te veel wil bereiken
 
-It’s worth noting that there are few cases where long & external snapshots are acceptable - when asserting on schema and not data (extracting out values and focusing on fields) or when the received document rarely changes
+Het is vermeldenswaard dat er maar weinig gevallen zijn waarin lange en externe momentopnamen acceptabel zijn - wanneer wordt gecheckt op schema en niet op gegevens (waarden extraheren en focussen op velden) of wanneer het ontvangen document zelden verandert
 <br/>
 
-❌ **Otherwise:** A UI test fails. The code seems right, the screen renders perfect pixels, what happened? your snapshot testing just found a difference from the origin document to current received one - a single space character was added to the markdown...
+❌ **Anders:** Een UI-test mislukt. De code lijkt goed, het scherm geeft perfecte pixels weer, wat is er gebeurd? uw snapshot-testen hebben zojuist een verschil gevonden tussen het oorspronkelijke document en het huidige ontvangen - er is een enkele spatie toegevoegd aan de markdown ...
+<br/>
+
+<details><summary>✏ <b>Code Voorbeelden</b></summary>
 
 <br/>
 
-<details><summary>✏ <b>Code Examples</b></summary>
-
-<br/>
-
-### :thumbsdown: Anti-Pattern Example: Coupling our test to unseen 2000 lines of code
+### :thumbsdown: Anti-Pattern Voorbeeld: Onze test koppelen aan ongeziene 2000 regels code
 
 ![](https://img.shields.io/badge/🔧%20Example%20using%20Jest-blue.svg "Examples with Jest")
 
@@ -498,7 +497,7 @@ it("TestJavaScript.com is renderd correctly", () => {
 
 <br/>
 
-### :clap: Doing It Right Example: Expectations are visible and focused
+### :clap: Het juiste voorbeeld: Verwachtingen zijn zichtbaar en gefocust
 
 ```javascript
 it("When visiting TestJavaScript.com home page, a menu is displayed", () => {
