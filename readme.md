@@ -527,9 +527,7 @@ it("When visiting TestJavaScript.com home page, a menu is displayed", () => {
 
 ## ⚪ ️1.9 Vermijd globale fixtures en seeds, voeg gegevens per test toe
 
-:white_check_mark: **Doen:** Going by the golden rule (bullet 0), each test should add and act on its own set of DB rows to prevent coupling and easily reason about the test flow. In reality, this is often violated by testers who seed the DB with data before running the tests ([also known as ‘test fixture’](https://en.wikipedia.org/wiki/Test_fixture)) for the sake of performance improvement. While performance is indeed a valid concern — it can be mitigated (see “Component testing” bullet), however, test complexity is a much painful sorrow that should govern other considerations most of the time. Practically, make each test case explicitly add the DB records it needs and act only on those records. If performance becomes a critical concern — a balanced compromise might come in the form of seeding the only suite of tests that are not mutating data (e.g. queries)
-
-Volgens de gouden regel (bullet 0) moet elke test een eigen set DB-rijen toevoegen en hierop reageren om koppeling te voorkomen en gemakkelijk de testflow te begrijpen. In werkelijkheid wordt dit vaak geschonden door testers die de database voorzien van gegevens voordat de tests worden uitgevoerd ([ook bekend als 'test fixture'](https://en.wikipedia.org/wiki/Test_fixture)) omwille van prestatie verbetering. Hoewel prestatie inderdaad een terechte zorg is - kan het worden verzacht (zie punt “Component testing”), maar de testcomplexiteit is een zeer pijnlijk verdriet dat meestal andere overwegingen zou moeten beheersen. Zorg er praktisch voor dat elke testcase expliciet de DB-records toevoegt die het nodig heeft en handel alleen op die records. Als prestaties van de testuitvoer een kritieke zorg wordt, kan er een compromis komen in de vorm van het voorzien van testdata bij testen die geen gegevens muteren (bijv.query's)
+:white_check_mark: **Doen:** Volgens de gouden regel (bullet 0) moet elke test een eigen set DB-rijen toevoegen en hierop reageren om koppeling te voorkomen en gemakkelijk de testflow te begrijpen. In werkelijkheid wordt dit vaak geschonden door testers die de database voorzien van gegevens voordat de tests worden uitgevoerd ([ook bekend als 'test fixture'](https://en.wikipedia.org/wiki/Test_fixture)) omwille van prestatie verbetering. Hoewel prestatie inderdaad een terechte zorg is - kan het worden verzacht (zie punt “Component testing”), maar de testcomplexiteit is een zeer pijnlijk verdriet dat meestal andere overwegingen zou moeten beheersen. Zorg er praktisch voor dat elke testcase expliciet de DB-records toevoegt die het nodig heeft en handel alleen op die records. Als prestaties van de testuitvoer een kritieke zorg wordt, kan er een compromis komen in de vorm van het voorzien van testdata bij testen die geen gegevens muteren (bijv.query's)
 <br/>
 
 ❌ **Anders:** Er zijn maar weinig tests die falen, een deployment wordt afgebroken, ons team gaat nu kostbare tijd besteden, hebben we een bug? laten we eens kijken, oh nee - het lijkt erop dat twee tests dezelfde testgegevens muteerden
@@ -583,22 +581,21 @@ it("When updating site name, get successful confirmation", async () => {
 
 <br/>
 
-## ⚪ ️ 1.10 Don’t catch errors, expect them
+## ⚪ ️ 1.10 Vang geen fouten, maar verwacht ze
 
-:white_check_mark: **Do:** When trying to assert that some input triggers an error, it might look right to use try-catch-finally and asserts that the catch clause was entered. The result is an awkward and verbose test case (example below) that hides the simple test intent and the result expectations
+:white_check_mark: **Doen:** Als je probeert te controleren dat bepaalde invoer een fout veroorzaakt, lijkt het misschien goed om try-catch-finally te gebruiken en de catch-clausule te controleren of het is ingevoerd. Het resultaat is een lastige en uitgebreide testcase (voorbeeld hieronder) die de eenvoudige testintentie en de resultaatverwachtingen verbergt
 
-A more elegant alternative is the using the one-line dedicated Chai assertion: expect(method).to.throw (or in Jest: expect(method).toThrow()). It’s absolutely mandatory to also ensure the exception contains a property that tells the error type, otherwise given just a generic error the application won’t be able to do much rather than show a disappointing message to the user
+Een eleganter alternatief is het gebruik van de eenregelige speciale Chai-assertion: expect(methode).to.throw(of in Jest: expect(methode).toThrow()). Het is absoluut verplicht om er ook voor te zorgen dat de exceptie een eigenschap bevat die het fouttype bevat, anders kan de toepassing bij een algemene fout niet veel meer doen dan een teleurstellend bericht aan de gebruiker laten zien
 <br/>
 
-❌ **Otherwise:** It will be challenging to infer from the test reports (e.g. CI reports) what went wrong
+❌ **Anders:** Het zal een uitdaging zijn om uit de testrapporten (bijvoorbeeld CI-rapporten) af te leiden wat er mis is gegaan
+<br/>
+
+<details><summary>✏ <b>Code Voorbeelden</b></summary>
 
 <br/>
 
-<details><summary>✏ <b>Code Examples</b></summary>
-
-<br/>
-
-### :thumbsdown: Anti-pattern Example: A long test case that tries to assert the existence of error with try-catch
+### :thumbsdown: Anti-pattern Example: Een lange testcase die het bestaan van een fout probeert te bevestigen met try-catch
 
 ![](https://img.shields.io/badge/🔧%20Example%20using%20Mocha-blue.svg "Examples with Mocha")
 
@@ -619,7 +616,7 @@ it("When no product name, it throws error 400", async () => {
 
 <br/>
 
-### :clap: Doing It Right Example: A human-readable expectation that could be understood easily, maybe even by QA or technical PM
+### :clap: Het juiste voorbeeld: Een door mensen leesbare verwachting die gemakkelijk kan worden begrepen, misschien zelfs door QA of technische PM
 
 ```javascript
 it("When no product name, it throws error 400", async () => {
